@@ -1,0 +1,247 @@
+[
+ {
+  "fn": "layerTruth",
+  "args": [
+   8,
+   10
+  ],
+  "out": "An 8 by 10 inch basket keeps 64.0 square inches of honest layer; the quarts never mentioned the layer honestly."
+ },
+ {
+  "fn": "layerTruth",
+  "args": [
+   9,
+   9
+  ],
+  "out": "A 9 by 9 inch basket keeps 64.8 square inches of honest layer; the quarts never mentioned the layer honestly."
+ },
+ {
+  "fn": "layerTruth",
+  "args": [
+   5,
+   5
+  ],
+  "out": "A 5 by 5 inch basket keeps 20.0 square inches of honest layer; the quarts never mentioned the layer honestly."
+ },
+ {
+  "fn": "layerTruth",
+  "args": [
+   18,
+   10
+  ],
+  "out": "An 18 by 10 inch basket keeps 144.0 square inches of honest layer; the quarts never mentioned the layer honestly."
+ },
+ {
+  "fn": "layerTruth",
+  "args": [
+   12,
+   14
+  ],
+  "out": "A 12 by 14 inch basket keeps 134.4 square inches of honest layer; the quarts never mentioned the layer honestly."
+ },
+ {
+  "fn": "layerTruth",
+  "args": [
+   0,
+   10
+  ],
+  "err": "the basket width must be above zero"
+ },
+ {
+  "fn": "layerTruth",
+  "args": [
+   8,
+   0
+  ],
+  "err": "the basket depth must be above zero"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   64,
+   20,
+   6
+  ],
+  "out": "The layer holds 3 servings at a time; 6 servings take 2 batches honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   64,
+   20,
+   3
+  ],
+  "out": "The layer holds 3 servings at a time; 3 servings take 1 batch honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   64,
+   20,
+   64
+  ],
+  "out": "The layer holds 3 servings at a time; 64 servings take 22 batches honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   20,
+   20,
+   5
+  ],
+  "out": "The layer holds 1 serving at a time; 5 servings take 5 batches honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   10,
+   20,
+   4
+  ],
+  "out": "The layer cannot hold even one serving at that spacing honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   134.4,
+   20,
+   10
+  ],
+  "out": "The layer holds 6 servings at a time; 10 servings take 2 batches honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   100,
+   12,
+   30
+  ],
+  "out": "The layer holds 8 servings at a time; 30 servings take 4 batches honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   50,
+   20,
+   2
+  ],
+  "out": "The layer holds 2 servings at a time; 2 servings take 1 batch honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   40,
+   20,
+   40
+  ],
+  "out": "The layer holds 2 servings at a time; 40 servings take 20 batches honestly."
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   0,
+   20,
+   6
+  ],
+  "err": "the layer area must be above zero"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   64,
+   0,
+   6
+  ],
+  "err": "the per-serving area must be above zero"
+ },
+ {
+  "fn": "batchTruth",
+  "args": [
+   64,
+   20,
+   0
+  ],
+  "err": "the servings must be above zero"
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   2,
+   18,
+   3
+  ],
+  "out": "2 batches of 18 minutes each plus a 3-minute preheat make 39 minutes honestly - the recipe was counting one layer honestly."
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   1,
+   18,
+   3
+  ],
+  "out": "1 batch of 18 minutes each plus a 3-minute preheat makes 21 minutes honestly - one batch, no queue honestly."
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   3,
+   12,
+   0
+  ],
+  "out": "3 batches of 12 minutes each plus no preheat make 36 minutes honestly - the recipe was counting one layer honestly."
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   4,
+   15,
+   3
+  ],
+  "out": "4 batches of 15 minutes each plus a 3-minute preheat make 63 minutes honestly - the recipe was counting one layer honestly."
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   22,
+   15,
+   3
+  ],
+  "out": "22 batches of 15 minutes each plus a 3-minute preheat make 333 minutes honestly - the recipe was counting one layer honestly."
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   1,
+   25,
+   0
+  ],
+  "out": "1 batch of 25 minutes each plus no preheat makes 25 minutes honestly - one batch, no queue honestly."
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   2,
+   18,
+   1
+  ],
+  "out": "2 batches of 18 minutes each plus a 1-minute preheat make 37 minutes honestly - the recipe was counting one layer honestly."
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   0,
+   18,
+   3
+  ],
+  "err": "the batches must be above zero"
+ },
+ {
+  "fn": "timeTruth",
+  "args": [
+   2,
+   0,
+   3
+  ],
+  "err": "the batch minutes must be above zero"
+ }
+]
